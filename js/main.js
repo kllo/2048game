@@ -173,7 +173,8 @@ document.addEventListener('touchstart',function(event){
 	    starx=event.touches[0].pageX,
 	    stary=event.touches[0].pageY;
 });
-document.addEventListener('touchend',function(){
+document.addEventListener('touchend',function(event){
+	   event.prepreventDefault();
 	    endx=event.changedTouches[0].pageX,
 	    endy=event.changedTouches[0].pageY;
 	    
