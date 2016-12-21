@@ -1,7 +1,7 @@
 var documentWidth=window.screen.availWidth,
-    gridContainerWidth=0.92*documentWidth,
-    cellSideLength=0.18*documentWidth,
-    cellSpace=0.04*documentWidth;
+    gridContainerWidth=2*documentWidth,
+    cellSideLength=0.42*documentWidth,
+    cellSpace=0.06*documentWidth;
 
 function getPosTop(i,j){
 //	return 20+i*120;
