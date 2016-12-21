@@ -60,6 +60,8 @@ function init(){
 
 function updateBoardView(){
 	$(".number-cell").remove();
+	$('.number-cell').css('line-height',cellSideLength+'px');
+	$('.number-cell').css('font-size',0.6*cellSideLength+'px');
 	for(var i=0;i<4;i++){
 		for(var j=0;j<4;j++){
 			$("#grid-container").append('<div class="number-cell" id="number-cell-'+i+'-'+j+'"></div>');
@@ -79,14 +81,13 @@ function updateBoardView(){
 				theNumberCell.css('color',getNumberColor(board[i][j]));
 				theNumberCell.text(board[i][j]);
 				if(board[i][j]>1000){
-					theNumberCell.css('font-size',0.2*cellSideLength);
+					theNumberCell.css('font-size',0.3*cellSideLength);
 				}
 			}
 			hasConflicted[i][j]=false;
 		}
 	}
-	$('.number-cell').css('line-height',cellSideLength+'px');
-	$('.number-cell').css('font-size',0.6*cellSideLength+'px');
+	
 }
 
 function generateOneNumber(){
