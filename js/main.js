@@ -174,8 +174,7 @@ document.addEventListener('touchstart',function(event){
 	    starx=event.touches[0].pageX,
 	    stary=event.touches[0].pageY;
 });
-document.addEventListener('touchend',function(event){
-	   event.prepreventDefault();
+document.addEventListener('touchend',function(){
 	    endx=event.changedTouches[0].pageX,
 	    endy=event.changedTouches[0].pageY;
 	    
