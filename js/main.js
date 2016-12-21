@@ -79,7 +79,7 @@ function updateBoardView(){
 				theNumberCell.css('color',getNumberColor(board[i][j]));
 				theNumberCell.text(board[i][j]);
 				if(board[i][j]>1000){
-					theNumberCell.css('font-size',20px);
+					theNumberCell.css('font-size',20);
 				}
 			}
 			hasConflicted[i][j]=false;
