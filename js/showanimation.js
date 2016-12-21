@@ -27,7 +27,8 @@ function updateScpre(score){
 }
 function updateHightScore(score){
 	if(hightscore<score){
-		$('#hightscore').text(score);
+		hightscore=score;
+		$('#hightscore').text(hightscore);
 		console.log(1);
 	}
 }
